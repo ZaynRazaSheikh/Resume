@@ -9,6 +9,10 @@
         /* Global styles */
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
         }
 
         /* Container styles */
@@ -21,6 +25,7 @@
         /* Header styles */
         .header {
             text-align: center;
+            padding: 20px 0;
         }
 
         /* Section styles */
@@ -30,6 +35,11 @@
             border-radius: 8px;
             background-color: #ffffff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
         }
 
         .section h2 {
@@ -52,10 +62,10 @@
     </style>
 </head>
 
-<body class="px-6 py-3 text-lg font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-700">
-    <div class="container mx-auto p-6">
+<body>
+    <div class="container">
         <header class="header">
-            <h1 class="text-3xl font-bold">Vitae</h1>
+            <h1 class="text-3xl font-bold">Curriculum Vitae</h1>
         </header>
         <section class="section">
             <h2>Personal Information</h2>
